@@ -2,11 +2,17 @@
   "name": "next_package_demo",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "tsc --project tsconfig.build.json",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "react": "^18",
