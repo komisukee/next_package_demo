@@ -6,9 +6,11 @@
       "declarationMap": true,
       "sourceMap": true,
       "noEmit": false,
-      "emitDeclarationOnly": true
+      "emitDeclarationOnly": false,
+      "moduleResolution": "node",
+      "module": "esnext",
+      "target": "es5"
     },
-    "include": ["app/**/*"],
+    "include": ["index.ts", "app/components/**/*"],
     "exclude": ["app/**/*.test.ts", "app/**/*.test.tsx"]
-  }
-  
+}
